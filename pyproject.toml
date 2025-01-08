@@ -11,8 +11,6 @@ license = {text = "MIT"}
 authors = [
     {name = "Mariusz Kryński", email = "mrk@sed.pl"}
 ]
-homepage = "https://github.com/moleus/euc-kingsong-lib"
-keywords = ["euc", "dbussy", "kingsong"]
 dependencies = [
     "euc @ git+https://github.com/moleus/euc-lib.git@0.3.0"
 ]

@@ -14,7 +14,7 @@ authors = [
 homepage = "https://github.com/moleus/euc-kingsong-lib"
 keywords = ["euc", "dbussy", "kingsong"]
 dependencies = [
-    "git+https://github.com/moleus/euc-lib.git@0.3.0"
+    "euc @ git+https://github.com/moleus/euc-lib.git@0.3.0"
 ]
 
 [project.urls]

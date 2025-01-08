@@ -14,7 +14,7 @@ class KS(EUCBase):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.initialized = False
+        self.is_initialized = False
 
     async def run(self):
         try_nr = 0
@@ -44,7 +44,7 @@ class KS(EUCBase):
                         speed=result[2] / 100.0,
                         total_distance=tot_dist,
                         current=result[5],
-                        temperature=result[6] / 100.0,
+                        system_temp=result[6] / 100.0,
                         mode=result[7],
                     )
                 )
@@ -58,7 +58,7 @@ class KS(EUCBase):
                         light_status=result[5],
                         voice_status=result[6],
                         fan_status=result[7],
-                        temperature2=result[9],
+                        cpu_temp=result[9],
                     )
                 )
 
